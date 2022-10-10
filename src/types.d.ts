@@ -1,6 +1,8 @@
 export interface Launch {
   fairings: null;
-  links: Object;
+  links: Object<{
+    patch: Object;
+  }>;
   static_fire_date_utc: String;
   static_fire_date_unix: 1583058000;
   tdb: Boolean;

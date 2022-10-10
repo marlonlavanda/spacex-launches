@@ -1,0 +1,15 @@
+section {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 56px 0px;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}

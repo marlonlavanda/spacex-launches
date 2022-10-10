@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { getAllLaunches } from "../services/getLaunches";
 import { Launch } from "../types";
-
+import Grid from "../components/Grid";
 interface AppState {
   launches: Array<Launch>;
 }
@@ -17,7 +17,7 @@ function Home() {
   console.log(launches);
   return (
     <>
-      <div>Home</div>
+      <Grid launches={launches} />
     </>
   );
 }
