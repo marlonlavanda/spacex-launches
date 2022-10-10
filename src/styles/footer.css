@@ -1,0 +1,25 @@
+footer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #333333;
+  height: 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-container span {
+  color: #7c7c7c;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}

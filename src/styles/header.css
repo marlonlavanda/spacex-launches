@@ -1,0 +1,33 @@
+header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #333333;
+  height: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container h1 {
+  color: white;
+  margin: 0px;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+li {
+  color: white;
+  font-weight: 600;
+}

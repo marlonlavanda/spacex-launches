@@ -1,0 +1,25 @@
+import { useState, useEffect } from "react";
+
+import { getAllLaunches } from "../services/getLaunches";
+import { Launch } from "../types";
+
+interface AppState {
+  launches: Array<Launch>;
+}
+
+function Home() {
+  const [launches, setLaunches] = useState<AppState["launches"]>([]);
+
+  useEffect(() => {
+    getAllLaunches().then((res) => setLaunches(res));
+  }, []);
+
+  console.log(launches);
+  return (
+    <>
+      <div>Home</div>
+    </>
+  );
+}
+
+export default Home;
